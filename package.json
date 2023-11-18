@@ -1,0 +1,46 @@
+{
+  "name": "lp-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/lp-ui.umd.js",
+  "module": "./dist/lp-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lp-ui.es.js",
+      "require": "./dist/lp-ui.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "watch": "vitest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.3",
+    "@testing-library/react": "^14.1.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-test-renderer": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "c8": "^8.0.1",
+    "eslint": "^8.54.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "jsdom": "^22.1.0",
+    "react-test-renderer": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vitest": "^0.34.6"
+  }
+}
